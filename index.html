@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Сергей Морозов | Fullstack-портфолио</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-flex">
+      <div class="logo">plrtp<span>.dev</span></div>
+      <div class="nav-links">
+        <a href="#about">Обо мне</a>
+        <a href="#stack">Стек</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">Fullstack-разработчик</div>
+          <h1>Сергей Морозов<br><span class="accent-text">создаю надежные веб-системы</span></h1>
+          <p class="hero-desc">Проектирую архитектуру, пишу чистый код и строю масштабируемые приложения.</p>
+          <div>
+            <a href="#projects" class="btn btn-primary" style="margin-right: 12px;">Посмотреть проекты</a>
+            <a href="#contact" class="btn btn-outline">Написать мне</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item"><div class="stat-number">8+</div><div style="color:#9a9a9a;">завершенных проектов</div></div>
+            <div class="stat-item"><div class="stat-number">100%</div><div style="color:#9a9a9a;">адаптивность</div></div>
+            <div class="stat-item"><div class="stat-number">high</div><div style="color:#9a9a9a;">perf & clean code</div></div>
+          </div>
+        </div>
+        <div class="hero-avatar">
+          <div class="avatar-placeholder">SM</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">Обо мне</h2>
+        <div class="about-text">
+          <p>Fullstack-разработчик с фокусом на продуманную архитектуру и качество кода. В работе сочетаю современные технологии: на фронтенде - <strong>Vue 3 (Composition API)</strong> и <strong>TypeScript</strong>, на бэкенде - <strong>Next.js</strong> и <strong>C# (.NET Core)</strong>.</p>
+          <p>Особое внимание уделяю структуре проекта, читаемости кода, тестируемости и масштабируемости. Проектирую решения так, чтобы их было легко развивать и поддерживать.</p>
+          <p>Создаю как небольшие лендинги, так и сложные панели управления, REST API, интеграции с базами данных. В каждом проекте стремлюсь к балансу между скоростью разработки и качеством результата.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="container">
+        <h2 class="section-title">Технологический стек</h2>
+        <div class="skills-grid">
+          <span class="skill-tag">Vue 3</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">C# / .NET</span>
+          <span class="skill-tag">Pinia</span>
+          <span class="skill-tag">Vue Router</span>
+          <span class="skill-tag">Tailwind / SCSS</span>
+          <span class="skill-tag">Entity Framework</span>
+          <span class="skill-tag">PostgreSQL / SQLite</span>
+          <span class="skill-tag">REST API / GraphQL</span>
+          <span class="skill-tag">Git & CI/CD</span>
+          <span class="skill-tag">Clean Architecture</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Созданные мной сайты</h2>
+        <div id="projectsContainer">
+          <!-- категории и проекты будут добавлены через JS -->
+        </div>
+        <div style="margin-top: 24px; text-align: center; color: #777; font-size: 0.85rem;" id="noticeText">
+          Проекты обновляются - новые разделы и сайты появляются регулярно.
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-block">
+          <h3>Начнём проект?</h3>
+          <p style="opacity: 0.8; margin-bottom: 8px;">Готов обсудить архитектуру и реализацию вашей идеи.</p>
+          <div class="contact-email">plrtp@mail.ru</div>
+          <div class="social-icons">
+            <a href="https://github.com/plrtp68217" target="_blank">GitHub</a>
+            <a href="https://t.me/poleartop" target="_blank">Telegram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Сергей Морозов. 2026 • Все проекты размещены на GitHub Pages</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
