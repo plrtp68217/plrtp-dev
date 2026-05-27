@@ -1,7 +1,4 @@
-// --------------------------------------------------------------
-// ДАННЫЕ ПРОЕКТОВ С КАТЕГОРИЯМИ (разделами)
-// Легко добавлять новые категории и сайты, просто следуя формату.
-// --------------------------------------------------------------
+
 const projectsCategories = [
   {
     id: "cafe",
@@ -12,9 +9,8 @@ const projectsCategories = [
         description:
           "Cайт для кофейни с акцентом на уютную атмосферу и презентацию меню. Реализована динамическая" +
           "фильтрация блюд по категориям (кофе, десерты, завтраки), форма бронирования столика с модальным окном, плавная навигация",
-        tech: ["Vue 3", "TypeScript", "Next.js",],
+        tech: ["HTML5", "CSS", "Vue 3", "TypeScript", "Next.js"],
         link: "https://plrtp68217.github.io/small-business-sites/cafe/cafe-site-design-1",
-        previewIcon: "coffee",
       },
       {
         title: "Ваша уютная кофейня",
@@ -24,9 +20,8 @@ const projectsCategories = [
           "Генератор персональных промокодов на скидку." +
           "Поддержка светлой и тёмной темы." +
           "Плавная навигация.",
-        tech: ["Vue 3", "TypeScript", "Next.js"],
-        link: " https://plrtp68217.github.io/small-business-sites/cafe/cafe-site-design-2",
-        previewIcon: "dashboard",
+        tech: ["HTML5", "CSS", "Vue 3", "TypeScript", "Next.js"],
+        link: "https://plrtp68217.github.io/small-business-sites/cafe/cafe-site-design-2",
       },
       {
         title: "GREY LAB — Монохромная кофейня",
@@ -34,53 +29,52 @@ const projectsCategories = [
           "Экспериментальный лендинг кофейни в эстетике «серых оттенков» — полный отказ от традиционной шапки и ярких цветов." +
           "Дизайн построен на глубоком чёрном фоне, серых полутонах и строгой типографике." +
           "Главный акцент сделан на атмосферной истории происхождения кофе",
-        tech: ["Next.js", "TypeScript", "Markdown", "CSS Modules"],
-        link: "https://morozovdev.github.io/coffee-blog/",
-        previewIcon: "article",
+        tech: ["HTML5", "CSS", "Vue 3", "TypeScript", "Next.js"],
+        link: "https://plrtp68217.github.io/small-business-sites/cafe/cafe-site-design-3",
+      },
+      {
+        title: "Кофеман — Минималистичная кофейня",
+        description:
+          "Строгий, архитектурный лендинг кофейни с акцентом на лаконичность" +
+          "Реализована двухкатегорийная сетка: кофе/десерты и мастер-классы с услугами." +
+          "Присутствует переключение светлой/тёмной темы." +
+          "Форма бронирования столика через модальный toast с уведомлением." +
+          "Все интерактивные элементы (кнопки заказа, бронирования) сопровождаются плавными всплывающими сообщениями в стиле проекта.",
+        tech: ["HTML5", "CSS", "Vue 3", "TypeScript", "Next.js"],
+        link: "https://plrtp68217.github.io/small-business-sites/cafe/cafe-site-design-4",
       },
     ],
   },
   {
-    id: "corporate",
-    categoryName: "Корпоративные сайты и сервисы",
+    id: "course",
+    categoryName: "Лендинги для онлайн-школ",
     projects: [
       {
-        title: "CRM-дашборд логистики",
+        title: "PYTHON DEV - курс по Python с нуля до боевого проекта",
         description:
-          "Дашборд для отслеживания перевозок с графиками, фильтрами и ролевой моделью. Frontend: Vue3, TS, mock API.",
-        tech: ["Vue 3", "Vuex", "Tailwind", "ApexCharts"],
-        link: "https://morozovdev.github.io/logistics-dashboard/",
-        previewIcon: "crm",
-      },
-      {
-        title: "Портал госуслуг (демо-версия)",
-        description:
-          "Демонстрационный портал с авторизацией, личным кабинетом и формами заявок. Акцент на валидацию и модульность.",
-        tech: ["Next.js", "TypeScript", "Zod", "React Hook Form"],
-        link: "https://morozovdev.github.io/gosuslugi-demo/",
-        previewIcon: "portal",
+          "Посадочная страница онлайн-курса по Python, построенная на принципах доверия и конкретных результатов. " +
+          "Главная задача - превратить сомневающегося новичка в уверенного ученика." +
+          "Визуальный стиль выполнен в тёмной «технической» гамме с акцентами в цветах Python (синий + жёлтый).",
+        tech: ["HTML5", "CSS", "Vue 3", "TypeScript", "Next.js"],
+        link: "https://plrtp68217.github.io/small-business-sites/course/python-beginners-course",
       },
     ],
   },
   {
-    id: "landing",
-    categoryName: "Лендинги и продуктовые сайты",
+    id: "shop",
+    categoryName: "Интернет-магазины",
     projects: [
       {
-        title: "Fintech — стартап лендинг",
+        title: "WATCH.STORE - Магазин премиальных часов",
         description:
-          "Современный лендинг для финтех-продукта с анимациями, формами связи и микро-взаимодействиями.",
-        tech: ["Vue 3", "GSAP", "SCSS", "Vite"],
-        link: "https://morozovdev.github.io/fintech-landing/",
-        previewIcon: "startup",
-      },
-      {
-        title: "Образовательная платформа (главная)",
-        description:
-          "Главная страница онлайн-школы с динамическими блоками, интеграцией с API курсов.",
-        tech: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
-        link: "https://morozovdev.github.io/edu-platform/",
-        previewIcon: "education",
+          "Полностью адаптивный дизайн." +
+          "Интерактивный каталог с карточками товаров, рейтингами и динамическими ценами." +
+          "Анимированное добавление товаров в корзину." +
+          "Миниатюрные аналоговые часы в шапке сайта с реальным ходом стрелок." +
+          "Многоязычный интерфейс (русский/английский) с мгновенным переключением." +
+          "Полнофункциональная корзина с боковой панелью, подтверждением очистки и оформлением заказа.",
+        tech: ["HTML5", "CSS", "Vue 3", "TypeScript", "Next.js"],
+        link: "https://plrtp68217.github.io/small-business-sites/shop/watch-shop",
       },
     ],
   },
@@ -150,7 +144,6 @@ function escapeHtml(str) {
   });
 }
 
-// Плавный скролл для якорей
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     const href = this.getAttribute("href");
