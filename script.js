@@ -58,6 +58,13 @@ const projectsCategories = [
         tech: ["HTML5", "CSS", "Vue 3", "TypeScript", "Next.js"],
         link: "https://plrtp68217.github.io/small-business-sites/course/python-beginners-course",
       },
+      {
+        title: "Backend‑курс .NET Middle",
+        description:
+          "Лендинг для курса по ASP.NET Core, DDD, микросервисам и Kafka. Тёмная тема, адаптив, модальная форма записи.",
+        tech: ["HTML5", "CSS", "Vue 3", "TypeScript", "Next.js"],
+        link: "https://plrtp68217.github.io/small-business-sites/course/dotnet-middle-course",
+      },
     ],
   },
   {
@@ -75,6 +82,21 @@ const projectsCategories = [
           "Полнофункциональная корзина с боковой панелью, подтверждением очистки и оформлением заказа.",
         tech: ["HTML5", "CSS", "Vue 3", "TypeScript", "Next.js"],
         link: "https://plrtp68217.github.io/small-business-sites/shop/watch-shop",
+      },
+    ],
+  },
+  {
+    id: "roadmap",
+    categoryName: "Дорожные карты (Roadmap)",
+    projects: [
+      {
+        title: "Unity Roadmap: Middle → Full‑stack GameDev",
+        description:
+          "Одностраничный трекер навыков с сохранением прогресса в localStorage." +
+          "Включает ECS, мультиплеер, оптимизацию, шейдеры, CI/CD." +
+          "Чеклисты, модульные прогресс-бары и общий процент завершения.",
+        tech: ["HTML5", "CSS", "Vue 3", "TypeScript", "Next.js"],
+        link: "https://plrtp68217.github.io/small-business-sites/roadmap",
       },
     ],
   },
