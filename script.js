@@ -5,28 +5,35 @@
 const projectsCategories = [
   {
     id: "cafe",
-    categoryName: "Сайты, сделанные для кофейни",
+    categoryName: "Сайты для кофейни",
     projects: [
       {
-        title: "Roast Coffee — Main website",
+        title: "Аромантика",
         description:
-          "Адаптивный лендинг для кофейни с меню, картой расположения, историей заведения и формой бронирования столов.",
-        tech: ["Vue 3", "TypeScript", "SCSS", "Pinia"],
-        link: "https://morozovdev.github.io/roast-coffee/",
+          "Cайт для кофейни с акцентом на уютную атмосферу и презентацию меню. Реализована динамическая" +
+          "фильтрация блюд по категориям (кофе, десерты, завтраки), форма бронирования столика с модальным окном, плавная навигация",
+        tech: ["Vue 3", "TypeScript", "Next.js",],
+        link: "https://plrtp68217.github.io/small-business-sites/cafe/cafe-site-design-1",
         previewIcon: "coffee",
       },
       {
-        title: "Кофейня 'Зерно' — админ-панель",
+        title: "Ваша уютная кофейня",
         description:
-          "Система управления заказами и складскими остатками для сети кофеен. Архитектура с разделением логики и чистым Vue.",
-        tech: ["Vue 3", "TS", "Composition API", "Chart.js"],
-        link: "https://morozovdev.github.io/coffee-admin/",
+          "Современный лендинг для кофейни с акцентом на пользовательский опыт и адаптивный дизайн." +
+          "Встроена форма бронирования столика с валидацией, toast-уведомлениями, автоматическим выбором минимальной даты." +
+          "Генератор персональных промокодов на скидку." +
+          "Поддержка светлой и тёмной темы." +
+          "Плавная навигация.",
+        tech: ["Vue 3", "TypeScript", "Next.js"],
+        link: " https://plrtp68217.github.io/small-business-sites/cafe/cafe-site-design-2",
         previewIcon: "dashboard",
       },
       {
-        title: "Coffee Blog & Magazine",
+        title: "GREY LAB — Монохромная кофейня",
         description:
-          "Блог о кофе, обжарке и рецептах с адаптивной сеткой, поиском и тематическими категориями.",
+          "Экспериментальный лендинг кофейни в эстетике «серых оттенков» — полный отказ от традиционной шапки и ярких цветов." +
+          "Дизайн построен на глубоком чёрном фоне, серых полутонах и строгой типографике." +
+          "Главный акцент сделан на атмосферной истории происхождения кофе",
         tech: ["Next.js", "TypeScript", "Markdown", "CSS Modules"],
         link: "https://morozovdev.github.io/coffee-blog/",
         previewIcon: "article",
@@ -108,19 +115,22 @@ function renderAllProjects() {
 
       // Создаем структуру карточки
       card.innerHTML = `
-            <div class="project-img">
-              <span style="margin-left: 8px; font-weight: 500;">${proj.title.substring(0, 1)}</span>
-            </div>
-            <div class="project-info">
-              <div class="project-title">${escapeHtml(proj.title)}</div>
-              <div class="project-desc">${escapeHtml(proj.description)}</div>
-              <div class="project-tech">
-                ${proj.tech.map((t) => `<span class="tech-badge">${escapeHtml(t)}</span>`).join("")}
+            <div class="project-content">
+              <div class="project-img">
+                <span style="margin-left: 8px; font-weight: 500;">${proj.title.substring(0, 1)}</span>
               </div>
-              <a href="${proj.link}" class="project-link" target="_blank" rel="noopener noreferrer">
-                🔗 Перейти на GitHub Pages →
-              </a>
+              <div class="project-info">
+                  <div class="project-title">${escapeHtml(proj.title)}</div>
+                  <div class="project-desc">${escapeHtml(proj.description)}</div>
+                  <div class="project-tech">
+                    ${proj.tech.map((t) => `<span class="tech-badge">${escapeHtml(t)}</span>`).join("")}
+                  </div>
+              </div>
             </div>
+
+            <a href="${proj.link}" class="project-link" target="_blank" rel="noopener noreferrer">
+                🔗 Перейти на GitHub Pages →
+            </a>
           `;
       gridDiv.appendChild(card);
     }
